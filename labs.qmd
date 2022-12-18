@@ -1,0 +1,5 @@
+---
+title: "Labs"
+---
+
+Aquí colocaré los apuntes y progresos hechos en los Labs.

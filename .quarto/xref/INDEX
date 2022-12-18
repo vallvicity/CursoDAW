@@ -4,5 +4,11 @@
   },
   "index.qmd": {
     "index.html": "5db719bf"
+  },
+  "apps.qmd": {
+    "apps.html": "b86be90d"
+  },
+  "labs.qmd": {
+    "labs.html": "4f1f7d40"
   }
 }

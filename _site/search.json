@@ -11,6 +11,20 @@
     "href": "index.html",
     "title": "Curso Cifo Daw",
     "section": "",
-    "text": "This is a Quarto website. Empezamos con markdown.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This is a Quarto website.\nEmpezamos con markdown.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "labs.html",
+    "href": "labs.html",
+    "title": "Labs",
+    "section": "",
+    "text": "Aquí colocaré los apuntes y progresos hechos en los Labs."
+  },
+  {
+    "objectID": "apps.html",
+    "href": "apps.html",
+    "title": "Apps",
+    "section": "",
+    "text": "Apps utilizadas en el curso y su documentación, teclas rápidas, tips,…"
   }
 ]

@@ -4,14 +4,16 @@ project:
 website:
   title: "Curso Cifo Daw"
   navbar:
-    left:
+    right:
       - href: index.qmd
         text: Home
+      - apps.qmd
+      - labs.qmd
       - about.qmd
 
 format:
   html:
-    theme: cosmo
+    theme: flatly
     css: styles.css
     toc: true
 
