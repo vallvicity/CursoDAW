@@ -2,4 +2,7 @@
 title: "Apps"
 ---
 
-Apps utilizadas en el curso y su documentación, teclas rápidas, tips,...
+Apps utilizadas en el curso y su documentación, teclas rápidas, tips,... 
+ - IntellIJ Idea 
+ - VS Code 
+ - Figma 
