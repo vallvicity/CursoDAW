@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Curso Cifo Daw",
@@ -25,6 +18,13 @@
     "href": "apps.html",
     "title": "Apps",
     "section": "",
-    "text": "Apps utilizadas en el curso y su documentación, teclas rápidas, tips,…"
+    "text": "Apps utilizadas en el curso y su documentación, teclas rápidas, tips,… - IntellIJ Idea - VS Code - Figma"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   }
 ]
