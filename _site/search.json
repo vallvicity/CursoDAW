@@ -26,5 +26,12 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "figma.html",
+    "href": "figma.html",
+    "title": "Figma",
+    "section": "",
+    "text": "Figma es una web que te va a permitir hacer diagramas\nEste es un ejemplo\n\n\n\nEjemplo de diagrama"
   }
 ]
