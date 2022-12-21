@@ -7,11 +7,18 @@
     "text": "This is a Quarto website.\nEmpezamos con markdown.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
+    "objectID": "intellij idea.html",
+    "href": "intellij idea.html",
+    "title": "IntellIJ Idea",
+    "section": "",
+    "text": "IDE de Java"
+  },
+  {
     "objectID": "labs.html",
     "href": "labs.html",
     "title": "Labs",
     "section": "",
-    "text": "Aquí colocaré los apuntes y progresos hechos en los Labs."
+    "text": "Aquí colocaré los apuntes y progresos hechos en los Labs.\n\nLab SE01-1: Maven/Gradle Person and Account\n\n\n\nclassDiagram"
   },
   {
     "objectID": "apps.html",
