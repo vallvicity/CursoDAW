@@ -2,7 +2,16 @@
 title: "Apps"
 ---
 
-Apps utilizadas en el curso y su documentación, teclas rápidas, tips,... 
- - IntellIJ Idea 
- - VS Code 
- - Figma 
+Apps utilizadas en el curso y su documentación, teclas rápidas, tips,...  
+  
+#### IntellIJ Idea  
+IDE para Java.  
+
+#### VS Code  
+IDE más general.  
+
+#### Figma  
+Diagramas, flowcharts.  
+
+#### Mermaid  
+Va de PM para los classDiagrams de Java o los Sequence Charts.
