@@ -25,7 +25,7 @@
     "href": "apps.html",
     "title": "Apps",
     "section": "",
-    "text": "Apps utilizadas en el curso y su documentación, teclas rápidas, tips,… - IntellIJ Idea - VS Code - Figma"
+    "text": "Apps utilizadas en el curso y su documentación, teclas rápidas, tips,…\n\nIntellIJ Idea\nIDE para Java.\n\n\nVS Code\nIDE más general.\n\n\nFigma\nDiagramas, flowcharts.\n\n\nMermaid\nVa de PM para los classDiagrams de Java o los Sequence Charts."
   },
   {
     "objectID": "figma.html",
