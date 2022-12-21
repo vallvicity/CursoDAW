@@ -7,8 +7,8 @@ website:
     right:
       - text: "Home"
         href: index.qmd       
-      - sidebar:apps
-      - sidebar:labs
+      - apps.qmd
+      - labs.qmd
       - about.qmd
 
 sidebar:
@@ -23,6 +23,9 @@ sidebar:
   
   - id: labs
     title: "Labs"
+    contents:
+      - labs.qmd
+
 
    
       
