@@ -5,22 +5,26 @@ website:
   title: "Curso Cifo Daw"
   navbar:
     right:
-      - text: Home
+      - text: "Home"
         href: index.qmd       
       - sidebar:apps
-      - labs.qmd
+      - sidebar:labs
       - about.qmd
 
 sidebar:
   - id: apps
-    text: Apps
     title: "Apps"
     style: "docked"
     background: light
     collapse-level: 2
     contents:
-      - href: apps.qmd
-      - href: figma.qmd
+      - intellij idea.qmd
+      - figma.qmd
+  
+  - id: labs
+    title: "Labs"
+
+   
       
 
 format:
