@@ -18,14 +18,14 @@
     "href": "labs.html",
     "title": "Labs",
     "section": "",
-    "text": "Aquí colocaré los apuntes y progresos hechos en los Labs."
+    "text": "Aquí colocaré los apuntes y progresos hechos en los Labs.\n\nLab SE01-1: Maven/Gradle Person and Account\n\n\n\nclassDiagram"
   },
   {
     "objectID": "apps.html",
     "href": "apps.html",
     "title": "Apps",
     "section": "",
-    "text": "Apps utilizadas en el curso y su documentación, teclas rápidas, tips,… - IntellIJ Idea - VS Code - Figma"
+    "text": "Apps utilizadas en el curso y su documentación, teclas rápidas, tips,…\n\nIntellIJ Idea\nIDE para Java.\n\n\nVS Code\nIDE más general.\n\n\nFigma\nDiagramas, flowcharts.\n\n\nMermaid\nVa de PM para los classDiagrams de Java o los Sequence Charts."
   },
   {
     "objectID": "figma.html",
