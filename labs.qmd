@@ -8,3 +8,7 @@ Aquí colocaré los apuntes y progresos hechos en los Labs.
   
 ![classDiagram](images/mermaid-diagram-2022-12-21-125259.png) 
 
+### Lab SE02 Movie-Review
+
+US: Vamos a crear un gestor de películas en el que podamos ver los directores, críticas, comentarios y lo que se nos ocurra.
+

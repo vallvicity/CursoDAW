@@ -7,8 +7,9 @@ website:
     right:
       - text: "Home"
         href: index.qmd       
-      - apps.qmd
-      - labs.qmd
+      - sidebar:apps
+      - sidebar:labs
+      - AlbertusDylemma.qmd
       - about.qmd
 
 sidebar:
@@ -25,6 +26,13 @@ sidebar:
     title: "Labs"
     contents:
       - labs.qmd
+      - labsse02moviemanager.qmd
+
+  - id: Albertus' Dylemma
+    title: "Albertus' Dylemma"
+    contents:
+      - AlbertusDylemma.qmd
+
 
 
    

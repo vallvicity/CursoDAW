@@ -18,7 +18,7 @@
     "href": "labs.html",
     "title": "Labs",
     "section": "",
-    "text": "Aquí colocaré los apuntes y progresos hechos en los Labs.\n\nLab SE01-1: Maven/Gradle Person and Account\n\n\n\nclassDiagram"
+    "text": "Aquí colocaré los apuntes y progresos hechos en los Labs.\n\nLab SE01-1: Maven/Gradle Person and Account\n\n\n\nclassDiagram\n\n\n\n\nLab SE02 Movie-Review\nUS: Vamos a crear un gestor de películas en el que podamos ver los directores, críticas, comentarios y lo que se nos ocurra."
   },
   {
     "objectID": "apps.html",
@@ -40,5 +40,40 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "AlbertusDylemma.html",
+    "href": "AlbertusDylemma.html",
+    "title": "Albertus’ Dylemma",
+    "section": "",
+    "text": "As a future developer I want to relate the struggles and reflect the mentality that you, my fellow reader and potential developer, should avoid.\nMy porpouse is to stablish some patterns of productive thinking to help to get you out from the Valley of Dispair that most likely you would fall. Trust me, I’ve been there…Actually I AM there, that’s why I want to reflect that in this kind of journal.\nThat’s the tricky part, I don’t know as of today (01/19/2023). But hopefully I will. First of all you need to understand the concept of iteration, my friend. With that in mind, we just need to start."
+  },
+  {
+    "objectID": "AlbertusDylemma.html#for-what",
+    "href": "AlbertusDylemma.html#for-what",
+    "title": "Albertus’ Dylemma",
+    "section": "For what?",
+    "text": "For what?\nMy porpouse is to stablish some patterns of productive thinking to help to get you out from the Valley of Dispair that most likely you would fall. Trust me, I’ve been there…Actually I AM there, that’s why I want to reflect that in this kind of journal."
+  },
+  {
+    "objectID": "AlbertusDylemma.html#how",
+    "href": "AlbertusDylemma.html#how",
+    "title": "Albertus’ Dylemma",
+    "section": "How?",
+    "text": "How?\nThat’s the tricky part, I don’t know as of today (01/19/2023). But hopefully I will. First of all you need to understand the concept of iteration, my friend. With that in mind, we just need to start."
+  },
+  {
+    "objectID": "AlbertusDylemma.html#albertus-dylemma-what-are-we-talking-about",
+    "href": "AlbertusDylemma.html#albertus-dylemma-what-are-we-talking-about",
+    "title": "Albertus’ Dylemma",
+    "section": "Albertus’ Dylemma… What are we talking about?",
+    "text": "Albertus’ Dylemma… What are we talking about?\nIt is the moment you need to either stop, take two steps back and think what led you into this or keep hitting the wall (and the keyboard with your pointless code).\nSo I have this requirement:\n\nMake a program that can manage information about movies such as:\n\nMovie name.\nIts director (e.g. so I can plan a themed marathon with my friends.)\n\nDirector’s prestige: I want to know how many Oscars has the director won through his career.\n\nIt also needs to include its critics made by the best professionals and to know how well or poorly rated it is.\n\n\nBased on this lab:\n\n\n\n\n\n\n📘 Linux Lab#SE02-1: Movie Review and Rating\nCreate a Maven/Gradle Java SE Project.\n\nAdd the needed dependencies:\n    Lombok\n    Junit\n    Java Faker\n\nCreate three Java classes to define the Model. Java SE Classes:\n\n    Movie: The Movie class represents a movie that is being reviewed. It has the following attributes:\n        title: a String representing the title of the movie\n        reviews: a Set of Review objects representing the reviews that have been written for this movie\n        Critic: The Critic class represents a critic who writes reviews.\n\n    The Critic class has the following attributes:\n        name: a String representing the name of the critic\n        Review: The Review class represents a review of a movie written by a critic.\n\n    The Review class has the following attributes:\n        movie: a Movie object representing the movie being reviewed\n        critic: a Critic object representing the critic who wrote the review\n        rating: an int representing the rating given by the critic (on a scale of 1 to 5)\n        comment: a String representing the comment written by the critic about the movie\n\n\n\nUser Story #1 - The easiest and certain way to hit the wall.\nLet’s just start coding:\n\npublic Class MovieManager  {\n    public static void main(String[])\n}\n\n\n\n\n\nflowchart LR\nA[Problema] --> B[Decision]\nB --> C(Code & See)\nB --> D(Piensa)\nD --> E[Sabes lo que haces?]\nC --> G[El Pozo]\nD --> F[Te enamoraste de tu primera idea?]\nG --> A"
+  },
+  {
+    "objectID": "labse02moviemanager.html",
+    "href": "labse02moviemanager.html",
+    "title": "Untitled",
+    "section": "",
+    "text": "labse02movie"
   }
 ]

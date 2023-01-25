@@ -1,0 +1,83 @@
+---
+title: "Albertus' Dylemma"
+---
+
+## Introduction
+
+As a future developer I want to relate the struggles and reflect the mentality that you, my fellow reader and potential developer, should avoid.
+
+My porpouse is to stablish some patterns of productive thinking to help to get you out from the Valley of Dispair that most likely you would fall.
+Trust me, I've been there...Actually I AM there, that's why I want to reflect that in this kind of journal.
+
+That's the tricky part, I don't know as of today (01/19/2023). But hopefully I will.
+First of all you need to understand the concept of [iteration](https://en.wikipedia.org/wiki/Iteration#Education), my friend. 
+With that in mind, we just need to start.
+
+## Albertus' Dylemma... What are we talking about?
+
+It is the moment you need to either stop, take two steps back and think what led you into this or keep hitting the wall (and the keyboard with your pointless code).
+
+So I have this requirement:
+
+* Make a program that can manage information about movies such as:
+    + Movie name.
+    + Its director (e.g. so I can plan a themed marathon with my friends.)
+        - Director's prestige: I want to know how many Oscars has the director won through his career.
+    + It also needs to include its critics made by the best professionals and to know how well or poorly rated it is.
+
+**Based on this lab:**
+
+::: {.callout-note appearance="simple"}
+📘 Linux Lab#SE02-1: Movie Review and Rating
+
+    Create a Maven/Gradle Java SE Project.
+
+    Add the needed dependencies:
+        Lombok
+        Junit
+        Java Faker
+
+    Create three Java classes to define the Model. Java SE Classes:
+
+        Movie: The Movie class represents a movie that is being reviewed. It has the following attributes:
+            title: a String representing the title of the movie
+            reviews: a Set of Review objects representing the reviews that have been written for this movie
+            Critic: The Critic class represents a critic who writes reviews.
+
+        The Critic class has the following attributes:
+            name: a String representing the name of the critic
+            Review: The Review class represents a review of a movie written by a critic.
+
+        The Review class has the following attributes:
+            movie: a Movie object representing the movie being reviewed
+            critic: a Critic object representing the critic who wrote the review
+            rating: an int representing the rating given by the critic (on a scale of 1 to 5)
+            comment: a String representing the comment written by the critic about the movie
+
+:::
+
+
+**User Story #1** - The easiest and certain way to hit the wall.
+
+Let's just start coding:
+
+```
+
+public Class MovieManager  {
+    public static void main(String[])
+}
+
+```
+```{mermaid}
+
+flowchart LR
+A[Problema] --> B[Decision]
+B --> C(Code & See)
+B --> D(Piensa)
+D --> E[Sabes lo que haces?]
+C --> G[El Pozo]
+D --> F[Te enamoraste de tu primera idea?]
+G --> A
+
+
+```
