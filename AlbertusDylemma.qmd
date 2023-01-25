@@ -2,32 +2,53 @@
 title: "Albertus' Dylemma"
 ---
 
+
+```{mermaid}
+
+flowchart LR
+
+A[Problem] --> B(Let's code & See what happens...)
+C[The Pitt]
+D(Optimal Solution)
+C --> B
+B --> C
+C --> A
+
+
+```
 ## Introduction
 
 As a future developer I want to relate the struggles and reflect the mentality that you, my fellow reader and potential developer, should avoid.
 
-My porpouse is to stablish some patterns of productive thinking to help to get you out from the Valley of Dispair that most likely you would fall.
-Trust me, I've been there...Actually I AM there, that's why I want to reflect that in this kind of journal.
+My pourpose is to stablish some patterns of productive thinking to help you to get out from the *Valley of Dispair* a.k.a. (and from now on) **The Pitt** that most likely you would fall into.
+Trust me, I've been there...Actually I AM constantly there, that's why I want to reflect that in this kind of journal.
 
-That's the tricky part, I don't know as of today (01/19/2023). But hopefully I will.
+::: {.callout-caution collapse="true"}
+## Anyway
+That's the tricky part, I don't know how as of today (01/19/2023). But hopefully I will.
 First of all you need to understand the concept of [iteration](https://en.wikipedia.org/wiki/Iteration#Education), my friend. 
 With that in mind, we just need to start.
+:::
 
 ## Albertus' Dylemma... What are we talking about?
 
-It is the moment you need to either stop, take two steps back and think what led you into this or keep hitting the wall (and the keyboard with your pointless code).
+You surely noticed the flowchart above. It's such a common pattern for us who just started programming. Have you ever feel identified with it?
 
-So I have this requirement:
 
-* Make a program that can manage information about movies such as:
-    + Movie name.
-    + Its director (e.g. so I can plan a themed marathon with my friends.)
-        - Director's prestige: I want to know how many Oscars has the director won through his career.
-    + It also needs to include its critics made by the best professionals and to know how well or poorly rated it is.
+As you keep progressing in your coding lessons, problems are going to be slightly more difficult and complex every time. Until you reach to a point when you can't completely see the solution in your mind.  
+You'll probably see straight how to get from A to B, but from B to C you see it blurry... Well, then you just have to get to B so you can see more clear how to get to C better, right?  
+Yes, I always trick to myself like that...
 
-**Based on this lab:**
+::: {.callout-note}
+## When we talk about **Albertus' Dylemma**:   
+It is that moment when you either need to stop, take two steps back and think what led you into this **or** keep hitting the wall (and the keyboard with your pointless code).
+:::
 
-::: {.callout-note appearance="simple"}
+
+
+I'm going to try to develop that idea on some exercises **based on this lab:**
+
+::: {.callout appearance="minimal"}
 📘 Linux Lab#SE02-1: Movie Review and Rating
 
     Create a Maven/Gradle Java SE Project.
@@ -55,7 +76,13 @@ So I have this requirement:
             comment: a String representing the comment written by the critic about the movie
 
 :::
+So I have this requirement:
 
+* Make a program that can manage information about movies such as:
+    + Movie name.
+    + Its director (e.g. so I can plan a themed marathon with my friends.)
+        - Director's prestige: I want to know how many Oscars has the director won through his career.
+    + It also needs to include its critics made by the best professionals and to know how well or poorly rated it is.
 
 **User Story #1** - The easiest and certain way to hit the wall.
 
@@ -68,6 +95,8 @@ public Class MovieManager  {
 }
 
 ```
+
+
 ```{mermaid}
 
 flowchart LR
@@ -81,3 +110,4 @@ G --> A
 
 
 ```
+
