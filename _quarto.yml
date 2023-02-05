@@ -12,26 +12,27 @@ website:
       - AlbertusDylemma.qmd
       - about.qmd
 
-sidebar:
-  - id: apps
-    title: "Apps"
-    style: "docked"
-    background: light
-    collapse-level: 2
-    contents:
-      - intellij idea.qmd
-      - figma.qmd
-  
-  - id: labs
-    title: "Labs"
-    contents:
-      - labs.qmd
-      - labsse02moviemanager.qmd
+  sidebar:
+    - id: apps
+      title: "Apps"
+      style: "docked"
+      background: light
+      collapse-level: 2
+      contents:
+        - intellij idea.qmd
+        - figma.qmd
+    
+    - id: labs
+      title: "Labs"
+      collapse-level: 3
+      contents:
+        - labs.qmd
+        - labse02moviemanager.qmd
 
-  - id: Albertus' Dylemma
-    title: "Albertus' Dylemma"
-    contents:
-      - AlbertusDylemma.qmd
+    - id: Albertus' Dylemma
+      title: "Albertus' Dylemma"
+      contents:
+        - AlbertusDylemma.qmd
 
 
 

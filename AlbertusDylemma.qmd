@@ -18,9 +18,19 @@ C --> A
 ```
 ## Introduction
 
-As a future developer I want to relate the struggles and reflect the mentality that you, my fellow reader and potential developer, should avoid.
 
+::: {.summary}
+As a future developer I want to relate the struggles and reflect the mentality that you, my fellow reader and potential developer, should avoid.
+:::
+
+</br>
+
+::: {.labs}
 My pourpose is to stablish some patterns of productive thinking to help you to get out from the *Valley of Dispair* a.k.a. (and from now on) **The Pitt** that most likely you would fall into.
+:::
+
+</br>
+
 Trust me, I've been there...Actually I AM constantly there, that's why I want to reflect that in this kind of journal.
 
 ::: {.callout-caution collapse="true"}

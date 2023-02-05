@@ -1,5 +1,94 @@
 ---
-title: "Untitled"
+title: "Lab #2: Movie Manager"
 ---
 
-labse02movie
+We are going to develop this app according to these requirements:
+
+
+:::{.summary}
+📘 Linux Lab#SE02-1: Movie Review and Rating
+
+    Create a Maven/Gradle Java SE Project.
+
+    Add the needed dependencies:
+        Lombok
+        Junit
+        Java Faker
+
+    Create three Java classes to define the Model. Java SE Classes:
+
+        Movie: The Movie class represents a movie that is being reviewed. It has the following attributes:
+            title: a String representing the title of the movie
+            reviews: a Set of Review objects representing the reviews that have been written for this movie
+            Critic: The Critic class represents a critic who writes reviews.
+
+        The Critic class has the following attributes:
+            name: a String representing the name of the critic
+            Review: The Review class represents a review of a movie written by a critic.
+
+        The Review class has the following attributes:
+            movie: a Movie object representing the movie being reviewed
+            critic: a Critic object representing the critic who wrote the review
+            rating: an int representing the rating given by the critic (on a scale of 1 to 5)
+            comment: a String representing the comment written by the critic about the movie
+
+    With Junit dependency create unitary test to test objects and operations.
+
+    From here you should add new features once all the test are passed.
+        Operations, you could think in a Manager Class o similar
+        New fields/attributes and new classes
+        New compositions and inherence: expand your model
+        Use Factory design pattern to create new objects
+:::
+
+### Solving discussion
+
+As a starting point, we're going to leave the dependencies for later, let's focus on the main requirements: the Classes, so we can have an overview of the project.  
+The core of this lab is based in these three classes and how are they going to interact between them.  
+```{mermaid}
+classDiagram
+    class Movie{
+        -String title
+        -ArrayList<Review> reviews
+        -Critic critic
+    }
+    class Critic{
+        -String name
+        -Review review
+    }
+    class Review{
+        -Movie movie
+        -Critic critic
+        -int rating
+        -String comment
+    }
+```
+
+Our goal is to have a data-store where we can check some movies and see their reviews, update them or even delete them. But we need to solve some discussion first: Is a movie going to have several reviews? Which class depends on which? Dependency? Inheritance? Multiplicity?  
+
+Let's consider that any movie could have different reviews from different Critics. In that case the class diagram would go as follows:  
+
+```{mermaid}
+classDiagram 
+    Critic "1" *-- "*" Review: Writes
+    Critic "*" *-- "*" Movie: Rates
+    Review "*" --o "1" Movie: Has
+    class Movie{
+        -String title
+        -ArrayList<Review> reviews
+        -Critic critic
+    }
+    class Critic{
+        -String name
+        -Review review
+    }
+    
+    class Review{
+        -Movie movie
+        -Critic critic
+        -int rating
+        -String comment
+    }
+```
+
+
