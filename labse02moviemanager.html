@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Curso Cifo Daw - Labs</title>
+<title>Curso Cifo Daw - Lab #2: Movie Manager</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -58,6 +58,9 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles.css">
@@ -128,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Labs</h1>
+      <h1 class="quarto-secondary-nav-title">Lab #2: Movie Manager</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -143,12 +146,12 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./labs.html" class="sidebar-item-text sidebar-link active">Labs</a>
+  <a href="./labs.html" class="sidebar-item-text sidebar-link">Labs</a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./labse02moviemanager.html" class="sidebar-item-text sidebar-link">Lab #2: Movie Manager</a>
+  <a href="./labse02moviemanager.html" class="sidebar-item-text sidebar-link active">Lab #2: Movie Manager</a>
   </div>
 </li>
     </ul>
@@ -160,8 +163,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lab-se01-1-mavengradle-person-and-account" id="toc-lab-se01-1-mavengradle-person-and-account" class="nav-link active" data-scroll-target="#lab-se01-1-mavengradle-person-and-account">Lab SE01-1: Maven/Gradle Person and Account</a></li>
-  <li><a href="#lab-se02-movie-review" id="toc-lab-se02-movie-review" class="nav-link" data-scroll-target="#lab-se02-movie-review">Lab SE02 Movie-Review</a></li>
+  <li><a href="#solving-discussion" id="toc-solving-discussion" class="nav-link active" data-scroll-target="#solving-discussion">Solving discussion</a></li>
   </ul>
 </nav>
     </div>
@@ -170,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Labs</h1>
+<h1 class="title d-none d-lg-block">Lab #2: Movie Manager</h1>
 </div>
 
 
@@ -185,19 +187,107 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Aquí colocaré los apuntes y progresos hechos en los Labs.</p>
-<section id="lab-se01-1-mavengradle-person-and-account" class="level3">
-<h3 class="anchored" data-anchor-id="lab-se01-1-mavengradle-person-and-account">Lab SE01-1: Maven/Gradle Person and Account</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/mermaid-diagram-2022-12-21-125259.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">classDiagram</figcaption><p></p>
-</figure>
+<p>We are going to develop this app according to these requirements:</p>
+<div class="summary">
+<p>📘 Linux Lab#SE02-1: Movie Review and Rating</p>
+<pre><code>Create a Maven/Gradle Java SE Project.
+
+Add the needed dependencies:
+    Lombok
+    Junit
+    Java Faker
+
+Create three Java classes to define the Model. Java SE Classes:
+
+    Movie: The Movie class represents a movie that is being reviewed. It has the following attributes:
+        title: a String representing the title of the movie
+        reviews: a Set of Review objects representing the reviews that have been written for this movie
+        Critic: The Critic class represents a critic who writes reviews.
+
+    The Critic class has the following attributes:
+        name: a String representing the name of the critic
+        Review: The Review class represents a review of a movie written by a critic.
+
+    The Review class has the following attributes:
+        movie: a Movie object representing the movie being reviewed
+        critic: a Critic object representing the critic who wrote the review
+        rating: an int representing the rating given by the critic (on a scale of 1 to 5)
+        comment: a String representing the comment written by the critic about the movie
+
+With Junit dependency create unitary test to test objects and operations.
+
+From here you should add new features once all the test are passed.
+    Operations, you could think in a Manager Class o similar
+    New fields/attributes and new classes
+    New compositions and inherence: expand your model
+    Use Factory design pattern to create new objects</code></pre>
 </div>
-</section>
-<section id="lab-se02-movie-review" class="level3">
-<h3 class="anchored" data-anchor-id="lab-se02-movie-review">Lab SE02 Movie-Review</h3>
-<p>US: Vamos a crear un gestor de películas en el que podamos ver los directores, críticas, comentarios y lo que se nos ocurra.</p>
+<section id="solving-discussion" class="level3">
+<h3 class="anchored" data-anchor-id="solving-discussion">Solving discussion</h3>
+<p>As a starting point, we’re going to leave the dependencies for later, let’s focus on the main requirements: the Classes, so we can have an overview of the project.<br>
+The core of this lab is based in these three classes and how are they going to interact between them.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-1">classDiagram
+    class Movie{
+        -String title
+        -ArrayList&lt;Review&gt; reviews
+        -Critic critic
+    }
+    class Critic{
+        -String name
+        -Review review
+    }
+    class Review{
+        -Movie movie
+        -Critic critic
+        -int rating
+        -String comment
+    }
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+<p>Our goal is to have a data-store where we can check some movies and see their reviews, update them or even delete them. But we need to solve some discussion first: Is a movie going to have several reviews? Which class depends on which? Dependency? Inheritance? Multiplicity?</p>
+<p>Let’s consider that any movie could have different reviews from different Critics. In that case the class diagram would go as follows:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-2">classDiagram 
+    Critic "1" *-- "*" Review: Writes
+    Critic "*" *-- "*" Movie: Rates
+    Review "*" --o "1" Movie: Has
+    class Movie{
+        -String title
+        -ArrayList&lt;Review&gt; reviews
+        -Critic critic
+    }
+    class Critic{
+        -String name
+        -Review review
+    }
+    
+    class Review{
+        -Movie movie
+        -Critic critic
+        -int rating
+        -String comment
+    }
+</pre>
+<div id="mermaid-tooltip-2" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
 
 
 </section>
