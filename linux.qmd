@@ -1,5 +1,5 @@
 ---
-title: Figma
+title: "Linux world"
 ---
 
 ### Figma es una web que te va a permitir hacer diagramas  

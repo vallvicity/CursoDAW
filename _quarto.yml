@@ -9,7 +9,7 @@ website:
         href: index.qmd       
       - sidebar:apps
       - sidebar:labs
-      - AlbertusDylemma.qmd
+      - sidebar:albertusdylemma
       - about.qmd
 
   sidebar:
@@ -19,8 +19,8 @@ website:
       background: light
       collapse-level: 2
       contents:
-        - intellij idea.qmd
-        - figma.qmd
+        - linux.qmd
+        - IDEs.qmd
     
     - id: labs
       title: "Labs"
@@ -29,10 +29,12 @@ website:
         - labs.qmd
         - labse02moviemanager.qmd
 
-    - id: Albertus' Dylemma
-      title: "Albertus' Dylemma"
+    - id: albertusdylemma
+      title: "adM"
       contents:
         - AlbertusDylemma.qmd
+        - MovieManager_lab.qmd
+        - key-notes_key-ideas.qmd
 
 
 

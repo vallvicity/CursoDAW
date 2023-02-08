@@ -1,0 +1,36 @@
+---
+title: "#key-notes / key-ideas"
+---
+### *albertusdylemma:*
+
+Tell about the good:
+
+* productive thinking
+* approaches (tentativa <-> iteracion -> soluc. optima)
+* stop
+
+
+
+
+
+### *movie manager lab:*
+All referred to bad mistakes / bad coding
+
+* pavoland
+* blocked
+* burnout
+* perfection
+* divagar --> problemas que no tocan
+* burnout
+
+
+
+### *key-ideas:*
+
+* Si no sabes lo que estás haciendo, harás lo que haces siempre.
+* No te enamores de tu primera idea.
+* La perfección es lo peor.
+* sunk cost fallacy // sesgo de coste perdido.
+* El proceso de programar
+    + niveles de profundidad
+    

@@ -66,7 +66,7 @@ classDiagram
 
 Our goal is to have a data-store where we can check some movies and see their reviews, update them or even delete them. But we need to solve some discussion first: Is a movie going to have several reviews? Which class depends on which? Dependency? Inheritance? Multiplicity?  
 
-Let's consider that any movie could have different reviews from different Critics. In that case the class diagram would go as follows:  
+Let's consider that any movie could have different reviews from different Critics. And one critic can review multiple movies. In that case the class diagram would go as follows:  
 
 ```{mermaid}
 classDiagram 
@@ -75,12 +75,12 @@ classDiagram
     Review "*" --o "1" Movie: Has
     class Movie{
         -String title
-        -ArrayList<Review> reviews
+        -ArrayList <Review> reviews
         -Critic critic
     }
     class Critic{
         -String name
-        -Review review
+        -ArrayList<Review> reviews
     }
     
     class Review{
@@ -88,6 +88,93 @@ classDiagram
         -Critic critic
         -int rating
         -String comment
+    }
+```
+
+In order to manage the different operations we are going to create a Manager for the classes, so we can add movies, list them, update them or delete them:
+
+```{mermaid}
+classDiagram 
+    Critic "1" *-- "*" Review: Writes
+    Critic "*" *-- "*" Movie: Rates
+    Review "*" --o "1" Movie: Has
+    MovieManager -- Movie: Uses
+    class Movie{
+        -String title
+        -ArrayList <Review> reviews
+        -Critic critic
+    }
+    class Critic{
+        -String name
+        -ArrayList<Review> reviews
+    }
+    
+    class Review{
+        -Movie movie
+        -Critic critic
+        -int rating
+        -String comment
+    }
+
+    class MovieManager {
+        -Scanner scan
+        -ArrayList<Movie> movies
+        +addMovie()
+        +updateMovie()
+        +listOne()
+        +listAll()
+        +deleteMovie()
+    }
+```
+
+:::{.callout-note}
+Always have in mind that what we are doing here is just **aproaching the problem**, trying to understand it at a **surface-level**, not develop its full functionality.
+:::
+
+There's something that I think it could be improved: I don't see the point of a Movie having a Critic, since the review already has one. Furthermor I think is interesting to add the Director of the movie. It's true that the requirements ask for a Critic instance in the Movie Class, but it's also true that oftenly **requirements are dumb**, so I'll make another draft because that's what we are doing now, just **approaching the problem**.  
+
+```{mermaid}
+classDiagram 
+    Critic "1" *-- "*" Review: Writes
+    Director "1" *-- "*" Movie: Makes
+    Review "*" --o "1" Movie: Has
+    MovieManager -- Movie: Uses
+    Person <|-- Director
+    Person <|-- Critic
+    class Movie{
+        -String title
+        -ArrayList <Review> reviews
+        -Director director
+    }
+    class Critic{
+        -String name
+        -ArrayList<Review> reviews
+    }
+    
+    class Review{
+        -Movie movie
+        -Critic critic
+        -int rating
+        -String comment
+    }
+
+    class Person {
+        -String name
+    }
+
+    class Director{
+        -ArrayList<Movie> movies
+        -int oscarQty
+    }
+
+    class MovieManager {
+        -Scanner scan
+        -ArrayList<Movie> movies
+        +addMovie()
+        +updateMovie()
+        +listOne()
+        +listAll()
+        +deleteMovie()
     }
 ```
 

@@ -1,0 +1,85 @@
+---
+title: "MovieManager lab"
+---
+
+I'm going to try to develop that idea on some exercises **based on this lab:**
+
+::: {.callout appearance="minimal"}
+📘 Linux Lab#SE02-1: Movie Review and Rating
+
+    Create a Maven/Gradle Java SE Project.
+
+    Add the needed dependencies:
+        Lombok
+        Junit
+        Java Faker
+
+    Create three Java classes to define the Model. Java SE Classes:
+
+        Movie: The Movie class represents a movie that is being reviewed. It has the following attributes:
+            title: a String representing the title of the movie
+            reviews: a Set of Review objects representing the reviews that have been written for this movie
+            Critic: The Critic class represents a critic who writes reviews.
+
+        The Critic class has the following attributes:
+            name: a String representing the name of the critic
+            Review: The Review class represents a review of a movie written by a critic.
+
+        The Review class has the following attributes:
+            movie: a Movie object representing the movie being reviewed
+            critic: a Critic object representing the critic who wrote the review
+            rating: an int representing the rating given by the critic (on a scale of 1 to 5)
+            comment: a String representing the comment written by the critic about the movie
+
+:::
+So I have this requirement:
+
+* Make a program that can manage information about movies such as:
+    + Movie name.
+    + Its director (e.g. so I can plan a themed marathon with my friends.)
+        - Director's prestige: I want to know how many Oscars has the director won through his career.
+    + It also needs to include its critics made by the best professionals and to know how well or poorly rated it is.
+
+**User Story #1** - The easiest and certain way to hit the wall.
+
+Let's just start coding:
+
+```{.java .code-overflow-wrap filename="moviemodel.java"}
+
+public Class MovieManager  {
+    public static void main(String[])
+
+
+}
+
+public Class Movie {
+    private String title;
+    private ArrayList<Review> reviews;
+    private Director director;
+
+}
+
+public Class Review {
+    private Critic critic;
+    private Movie movie;
+    private int rating;
+    private String comment;
+
+
+}
+
+public Class Critic {
+    private String name;
+    private ArrayList<Review> reviews;
+
+}
+
+public Class Director {
+    private String name;
+    private int oscarQty;
+    private ArrayList<Movie> movies;
+}
+
+
+```
+
