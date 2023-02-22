@@ -103,5 +103,12 @@
     "title": "IDE’s",
     "section": "",
     "text": "IDE de Java"
+  },
+  {
+    "objectID": "carsProject.html",
+    "href": "carsProject.html",
+    "title": "carsProject",
+    "section": "",
+    "text": "1er URL\n\n\n\nDiscusión\nUna Person puede ser Client o Vendor con una relación de herencia. A su vez Clienttendrá 1 o más vehículos y Vendoraportará 1 o más ChargPoint.\nLa operación de cargar un coche se realizará a través de Reservation.\n\n\n\n\n\n\nadM - Un cliente puede ser también un proveedor de puntos de carga y viceversa, por lo que podríamos tener delante diamante de la Muerte que puede crearnos problemas en el futuro.\n\n\n\n\nFunciones de Person\nLas funciones que pondremos en Person y que todo usuario puede realizar:\n\nOperaciones en la web\n\nDarse de alta\nActualizar datos\nBorrarse de la web\n\n\n\n\nFunciones de Client\nLas funciones exclusivas de un Client son:\n\nRegistrar vehículo/-s\n\nActualizar vehículos\nEliminar vehículos\n\n\nConsultar charging points\nRealizar reserva y:\n\nActualizar reserva\nCancelar reserva"
   }
 ]

@@ -1,0 +1,39 @@
+---
+title: carsProject
+---
+
+![1er URL](images/mermaid-diagram-2023-02-22-131538.png)
+
+
+### Discusión
+
+Una `Person` puede ser `Client` o `Vendor` con una relación de herencia. A su vez `Client`tendrá 1 o más vehículos y `Vendor`aportará 1 o más `ChargPoint`.
+
+La operación de cargar un coche se realizará a través de `Reservation`.
+
+::: {.callout-warning appearance="simple"}
+*adM - Un cliente puede ser también un proveedor de puntos de carga y viceversa, por lo que podríamos tener delante* diamante de la Muerte *que puede crearnos problemas en el futuro.* 
+:::
+
+##### Funciones de Person
+
+Las funciones que pondremos en Person y que todo usuario puede realizar:
+
+* Operaciones en la web
+    + Darse de alta
+    + Actualizar datos
+    + Borrarse de la web
+
+
+##### Funciones de Client
+
+Las funciones exclusivas de un Client son:
+
+- Registrar vehículo/-s
+    + Actualizar vehículos
+    + Eliminar vehículos    
+- Consultar charging points
+- Realizar reserva y:
+    + Actualizar reserva
+    + Cancelar reserva
+    

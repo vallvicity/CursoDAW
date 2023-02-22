@@ -28,6 +28,7 @@ website:
       contents:
         - labs.qmd
         - labse02moviemanager.qmd
+        - carsProject.qmd
 
     - id: albertusdylemma
       title: "adM"
