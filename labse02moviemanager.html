@@ -92,12 +92,12 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-apps">    
         <li>
-    <a class="dropdown-item" href="./intellij idea.html">
- <span class="dropdown-text">IntellIJ Idea</span></a>
+    <a class="dropdown-item" href="./linux.html">
+ <span class="dropdown-text">Linux world</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./figma.html">
- <span class="dropdown-text">Figma</span></a>
+    <a class="dropdown-item" href="./IDEs.html">
+ <span class="dropdown-text">IDE’s</span></a>
   </li>  
     </ul>
   </li>
@@ -114,12 +114,31 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="./labse02moviemanager.html">
  <span class="dropdown-text">Lab #2: Movie Manager</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./carsProject.html">
+ <span class="dropdown-text">carsProject</span></a>
+  </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="./AlbertusDylemma.html">
- <span class="menu-text">Albertus’ Dylemma</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-adm" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">adM</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-adm">    
+        <li>
+    <a class="dropdown-item" href="./AlbertusDylemma.html">
+ <span class="dropdown-text">Albertus’ Dylemma</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./MovieManager_lab.html">
+ <span class="dropdown-text">MovieManager lab</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./key-notes_key-ideas.html">
+ <span class="dropdown-text">key-notes / key-ideas</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./about.html">
  <span class="menu-text">About</span></a>
@@ -152,6 +171,11 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./labse02moviemanager.html" class="sidebar-item-text sidebar-link active">Lab #2: Movie Manager</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./carsProject.html" class="sidebar-item-text sidebar-link">carsProject</a>
   </div>
 </li>
     </ul>
@@ -255,7 +279,7 @@ The core of this lab is based in these three classes and how are they going to i
 </div>
 </div>
 <p>Our goal is to have a data-store where we can check some movies and see their reviews, update them or even delete them. But we need to solve some discussion first: Is a movie going to have several reviews? Which class depends on which? Dependency? Inheritance? Multiplicity?</p>
-<p>Let’s consider that any movie could have different reviews from different Critics. In that case the class diagram would go as follows:</p>
+<p>Let’s consider that any movie could have different reviews from different Critics. And one critic can review multiple movies. In that case the class diagram would go as follows:</p>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -266,12 +290,12 @@ The core of this lab is based in these three classes and how are they going to i
     Review "*" --o "1" Movie: Has
     class Movie{
         -String title
-        -ArrayList&lt;Review&gt; reviews
+        -ArrayList &lt;Review&gt; reviews
         -Critic critic
     }
     class Critic{
         -String name
-        -Review review
+        -ArrayList&lt;Review&gt; reviews
     }
     
     class Review{
@@ -282,6 +306,118 @@ The core of this lab is based in these three classes and how are they going to i
     }
 </pre>
 <div id="mermaid-tooltip-2" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+<p>In order to manage the different operations we are going to create a Manager for the classes, so we can add movies, list them, update them or delete them:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-3">classDiagram 
+    Critic "1" *-- "*" Review: Writes
+    Critic "*" *-- "*" Movie: Rates
+    Review "*" --o "1" Movie: Has
+    MovieManager -- Movie: Uses
+    class Movie{
+        -String title
+        -ArrayList &lt;Review&gt; reviews
+        -Critic critic
+    }
+    class Critic{
+        -String name
+        -ArrayList&lt;Review&gt; reviews
+    }
+    
+    class Review{
+        -Movie movie
+        -Critic critic
+        -int rating
+        -String comment
+    }
+
+    class MovieManager {
+        -Scanner scan
+        -ArrayList&lt;Movie&gt; movies
+        +addMovie()
+        +updateMovie()
+        +listOne()
+        +listAll()
+        +deleteMovie()
+    }
+</pre>
+<div id="mermaid-tooltip-3" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Always have in mind that what we are doing here is just <strong>aproaching the problem</strong>, trying to understand it at a <strong>surface-level</strong>, not develop its full functionality.</p>
+</div>
+</div>
+<p>There’s something that I think it could be improved: I don’t see the point of a Movie having a Critic, since the review already has one. Furthermor I think is interesting to add the Director of the movie. It’s true that the requirements ask for a Critic instance in the Movie Class, but it’s also true that oftenly <strong>requirements are dumb</strong>, so I’ll make another draft because that’s what we are doing now, just <strong>approaching the problem</strong>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-4">classDiagram 
+    Critic "1" *-- "*" Review: Writes
+    Director "1" *-- "*" Movie: Makes
+    Review "*" --o "1" Movie: Has
+    MovieManager -- Movie: Uses
+    Person &lt;|-- Director
+    Person &lt;|-- Critic
+    class Movie{
+        -String title
+        -ArrayList &lt;Review&gt; reviews
+        -Director director
+    }
+    class Critic{
+        -String name
+        -ArrayList&lt;Review&gt; reviews
+    }
+    
+    class Review{
+        -Movie movie
+        -Critic critic
+        -int rating
+        -String comment
+    }
+
+    class Person {
+        -String name
+    }
+
+    class Director{
+        -ArrayList&lt;Movie&gt; movies
+        -int oscarQty
+    }
+
+    class MovieManager {
+        -Scanner scan
+        -ArrayList&lt;Movie&gt; movies
+        +addMovie()
+        +updateMovie()
+        +listOne()
+        +listAll()
+        +deleteMovie()
+    }
+</pre>
+<div id="mermaid-tooltip-4" class="mermaidTooltip">
 
 </div>
 <p></p>

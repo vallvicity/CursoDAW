@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Curso Cifo Daw - Labs</title>
+<title>Curso Cifo Daw - carsProject</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -147,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Labs</h1>
+      <h1 class="quarto-secondary-nav-title">carsProject</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -162,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./labs.html" class="sidebar-item-text sidebar-link active">Labs</a>
+  <a href="./labs.html" class="sidebar-item-text sidebar-link">Labs</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -172,7 +172,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./carsProject.html" class="sidebar-item-text sidebar-link">carsProject</a>
+  <a href="./carsProject.html" class="sidebar-item-text sidebar-link active">carsProject</a>
   </div>
 </li>
     </ul>
@@ -184,8 +184,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lab-se01-1-mavengradle-person-and-account" id="toc-lab-se01-1-mavengradle-person-and-account" class="nav-link active" data-scroll-target="#lab-se01-1-mavengradle-person-and-account">Lab SE01-1: Maven/Gradle Person and Account</a></li>
-  <li><a href="#lab-se02-movie-review" id="toc-lab-se02-movie-review" class="nav-link" data-scroll-target="#lab-se02-movie-review">Lab SE02 Movie-Review</a></li>
+  <li><a href="#discusión" id="toc-discusión" class="nav-link active" data-scroll-target="#discusión">Discusión</a></li>
   </ul>
 </nav>
     </div>
@@ -194,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Labs</h1>
+<h1 class="title d-none d-lg-block">carsProject</h1>
 </div>
 
 
@@ -209,21 +208,58 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Aquí colocaré los apuntes y progresos hechos en los Labs.</p>
-<section id="lab-se01-1-mavengradle-person-and-account" class="level3">
-<h3 class="anchored" data-anchor-id="lab-se01-1-mavengradle-person-and-account">Lab SE01-1: Maven/Gradle Person and Account</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/mermaid-diagram-2022-12-21-125259.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">classDiagram</figcaption><p></p>
+<p><img src="images/mermaid-diagram-2023-02-22-131538.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">1er URL</figcaption><p></p>
 </figure>
 </div>
+<section id="discusión" class="level3">
+<h3 class="anchored" data-anchor-id="discusión">Discusión</h3>
+<p>Una <code>Person</code> puede ser <code>Client</code> o <code>Vendor</code> con una relación de herencia. A su vez <code>Client</code>tendrá 1 o más vehículos y <code>Vendor</code>aportará 1 o más <code>ChargPoint</code>.</p>
+<p>La operación de cargar un coche se realizará a través de <code>Reservation</code>.</p>
+<div class="callout-warning callout callout-style-simple">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>adM - Un cliente puede ser también un proveedor de puntos de carga y viceversa, por lo que podríamos tener delante</em> diamante de la Muerte <em>que puede crearnos problemas en el futuro.</em></p>
+</div>
+</div>
+</div>
+<section id="funciones-de-person" class="level5">
+<h5 class="anchored" data-anchor-id="funciones-de-person">Funciones de Person</h5>
+<p>Las funciones que pondremos en Person y que todo usuario puede realizar:</p>
+<ul>
+<li>Operaciones en la web
+<ul>
+<li>Darse de alta</li>
+<li>Actualizar datos</li>
+<li>Borrarse de la web</li>
+</ul></li>
+</ul>
 </section>
-<section id="lab-se02-movie-review" class="level3">
-<h3 class="anchored" data-anchor-id="lab-se02-movie-review">Lab SE02 Movie-Review</h3>
-<p>US: Vamos a crear un gestor de películas en el que podamos ver los directores, críticas, comentarios y lo que se nos ocurra.</p>
+<section id="funciones-de-client" class="level5">
+<h5 class="anchored" data-anchor-id="funciones-de-client">Funciones de Client</h5>
+<p>Las funciones exclusivas de un Client son:</p>
+<ul>
+<li>Registrar vehículo/-s
+<ul>
+<li>Actualizar vehículos</li>
+<li>Eliminar vehículos<br>
+</li>
+</ul></li>
+<li>Consultar charging points</li>
+<li>Realizar reserva y:
+<ul>
+<li>Actualizar reserva</li>
+<li>Cancelar reserva</li>
+</ul></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

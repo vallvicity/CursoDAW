@@ -92,12 +92,12 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-apps">    
         <li>
-    <a class="dropdown-item" href="./intellij idea.html">
- <span class="dropdown-text">IntellIJ Idea</span></a>
+    <a class="dropdown-item" href="./linux.html">
+ <span class="dropdown-text">Linux world</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./figma.html">
- <span class="dropdown-text">Figma</span></a>
+    <a class="dropdown-item" href="./IDEs.html">
+ <span class="dropdown-text">IDE’s</span></a>
   </li>  
     </ul>
   </li>
@@ -114,12 +114,31 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="./labse02moviemanager.html">
  <span class="dropdown-text">Lab #2: Movie Manager</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./carsProject.html">
+ <span class="dropdown-text">carsProject</span></a>
+  </li>  
     </ul>
   </li>
-  <li class="nav-item">
-    <a class="nav-link active" href="./AlbertusDylemma.html" aria-current="page">
- <span class="menu-text">Albertus’ Dylemma</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-adm" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">adM</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-adm">    
+        <li>
+    <a class="dropdown-item" href="./AlbertusDylemma.html">
+ <span class="dropdown-text">Albertus’ Dylemma</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./MovieManager_lab.html">
+ <span class="dropdown-text">MovieManager lab</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./key-notes_key-ideas.html">
+ <span class="dropdown-text">key-notes / key-ideas</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="./about.html">
  <span class="menu-text">About</span></a>
@@ -147,6 +166,16 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./AlbertusDylemma.html" class="sidebar-item-text sidebar-link active">Albertus’ Dylemma</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./MovieManager_lab.html" class="sidebar-item-text sidebar-link">MovieManager lab</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./key-notes_key-ideas.html" class="sidebar-item-text sidebar-link">key-notes / key-ideas</a>
   </div>
 </li>
     </ul>
@@ -212,7 +241,7 @@ C --&gt; A
 </div>
 <p><br></p>
 <div class="labs">
-<p>My pourpose is to stablish some patterns of productive thinking to help you to get out from the <em>Valley of Dispair</em> a.k.a. (and from now on) <strong>The Pitt</strong> that most likely you would fall into.</p>
+<p>My porpose is to stablish some patterns of productive thinking to help you to get out from the <em>Valley of Dispair</em> a.k.a. (and from now on) <strong>The Pitt</strong> that most likely you would fall into.</p>
 </div>
 <p><br></p>
 <p>Trust me, I’ve been there…Actually I AM constantly there, that’s why I want to reflect that in this kind of journal.</p>
@@ -252,59 +281,6 @@ When we talk about <strong>Albertus’ Dylemma</strong>:
 <p>It is that moment when you either need to stop, take two steps back and think what led you into this <strong>or</strong> keep hitting the wall (and the keyboard with your pointless code).</p>
 </div>
 </div>
-<p>I’m going to try to develop that idea on some exercises <strong>based on this lab:</strong></p>
-<div class="callout callout callout-style-simple no-icon">
-<div class="callout-body d-flex">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-body-container">
-<p>📘 Linux Lab#SE02-1: Movie Review and Rating</p>
-<pre><code>Create a Maven/Gradle Java SE Project.
-
-Add the needed dependencies:
-    Lombok
-    Junit
-    Java Faker
-
-Create three Java classes to define the Model. Java SE Classes:
-
-    Movie: The Movie class represents a movie that is being reviewed. It has the following attributes:
-        title: a String representing the title of the movie
-        reviews: a Set of Review objects representing the reviews that have been written for this movie
-        Critic: The Critic class represents a critic who writes reviews.
-
-    The Critic class has the following attributes:
-        name: a String representing the name of the critic
-        Review: The Review class represents a review of a movie written by a critic.
-
-    The Review class has the following attributes:
-        movie: a Movie object representing the movie being reviewed
-        critic: a Critic object representing the critic who wrote the review
-        rating: an int representing the rating given by the critic (on a scale of 1 to 5)
-        comment: a String representing the comment written by the critic about the movie</code></pre>
-</div>
-</div>
-</div>
-<p>So I have this requirement:</p>
-<ul>
-<li>Make a program that can manage information about movies such as:
-<ul>
-<li>Movie name.</li>
-<li>Its director (e.g.&nbsp;so I can plan a themed marathon with my friends.)
-<ul>
-<li>Director’s prestige: I want to know how many Oscars has the director won through his career.</li>
-</ul></li>
-<li>It also needs to include its critics made by the best professionals and to know how well or poorly rated it is.</li>
-</ul></li>
-</ul>
-<p><strong>User Story #1</strong> - The easiest and certain way to hit the wall.</p>
-<p>Let’s just start coding:</p>
-<pre><code>
-public Class MovieManager  {
-    public static void main(String[])
-}
-</code></pre>
 <div class="cell">
 <div class="cell-output-display">
 <div>
