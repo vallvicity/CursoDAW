@@ -1,8 +1,0 @@
----
-title: "Curso Cifo Daw"
----
-
-This is a Quarto website.  
-Empezamos con markdown.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.

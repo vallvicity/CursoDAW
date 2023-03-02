@@ -2,7 +2,7 @@
 title: carsProject
 ---
 
-![1er URL](images/mermaid-diagram-2023-02-22-131538.png)
+![1er URL](/images/mermaid-diagram-2023-02-22-131538.png)
 
 
 ### Discusión

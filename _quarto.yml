@@ -6,7 +6,7 @@ website:
   navbar:
     right:
       - text: "Home"
-        href: index.qmd       
+        href: home/index.qmd       
       - sidebar:apps
       - sidebar:labs
       - sidebar:albertusdylemma
@@ -19,23 +19,23 @@ website:
       background: light
       collapse-level: 2
       contents:
-        - linux.qmd
-        - IDEs.qmd
+        - apps/linux.qmd
+        - apps/IDEs.qmd
     
     - id: labs
       title: "Labs"
       collapse-level: 3
       contents:
-        - labs.qmd
-        - labse02moviemanager.qmd
-        - carsProject.qmd
+        - labs/labs.qmd
+        - labs/labse02moviemanager.qmd
+        - labs/carsProject.qmd
 
     - id: albertusdylemma
       title: "adM"
       contents:
-        - AlbertusDylemma.qmd
-        - MovieManager_lab.qmd
-        - key-notes_key-ideas.qmd
+        - adm/AlbertusDylemma.qmd
+        - adm/MovieManager_lab.qmd
+        - adm/key-notes_key-ideas.qmd
 
 
 

@@ -33,7 +33,7 @@ My porpose is to stablish some patterns of productive thinking to help you to ge
 
 Trust me, I've been there...Actually I AM constantly there, that's why I want to reflect that in this kind of journal.
 
-::: {.callout-caution collapse="true"}
+::: {.callout-caution appearance="minimal" collapse="true"}
 ## Anyway
 That's the tricky part, I don't know how as of today (01/19/2023). But hopefully I will.
 First of all you need to understand the concept of [iteration](https://en.wikipedia.org/wiki/Iteration#Education), my friend. 
@@ -51,7 +51,7 @@ Yes, I always trick to myself like that...
 
 ::: {.callout-note}
 ## When we talk about **Albertus' Dylemma**:   
-It is that moment when you either need to stop, take two steps back and think what led you into this **or** keep hitting the wall (and the keyboard with your pointless code).
+It is that moment when you either need to stop, take two steps back and think what led you into this **or** keep in the pitt.
 :::
 
 

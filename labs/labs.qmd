@@ -6,7 +6,7 @@ Aquí colocaré los apuntes y progresos hechos en los Labs.
   
 ### Lab SE01-1: Maven/Gradle Person and Account
   
-![classDiagram](images/mermaid-diagram-2022-12-21-125259.png) 
+![classDiagram](/images/mermaid-diagram-2022-12-21-125259.png) 
 
 ### Lab SE02 Movie-Review
 

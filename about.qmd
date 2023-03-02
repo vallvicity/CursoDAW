@@ -1,5 +1,9 @@
 ---
 title: "About"
+listing:
+ contents: labs
+ type: grid
+
 ---
 
 About this site

@@ -46,5 +46,38 @@
   },
   "carsProject.qmd": {
     "carsProject.html": "2f00819a"
+  },
+  "apps/linux.qmd": {
+    "linux.html": "0ae7ed90"
+  },
+  "labs/labse02moviemanager.qmd": {
+    "labse02moviemanager.html": "2219b94f"
+  },
+  "labs/carsProject.qmd": {
+    "carsProject.html": "f8e83b4b"
+  },
+  "labs/labs.qmd": {
+    "labs.html": "07c64a63"
+  },
+  "adm/AlbertusDylemma.qmd": {
+    "AlbertusDylemma.html": "1235c722"
+  },
+  "adm/key-notes_key-ideas.qmd": {
+    "key-notes_key-ideas.html": "56d675de"
+  },
+  "adm/MovieManager_lab.qmd": {
+    "MovieManager_lab.html": "6fa474c7"
+  },
+  "apps/apps.qmd": {
+    "apps.html": "3329d539"
+  },
+  "apps/IDEs.qmd": {
+    "IDEs.html": "3b33eeab"
+  },
+  "home/index.qmd": {
+    "index.html": "62fb4861"
+  },
+  "AlbertusDylemma.ipynb": {
+    "AlbertusDylemma.html": "9c9d6db8"
   }
 }
