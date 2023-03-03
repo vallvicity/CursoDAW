@@ -6,4 +6,4 @@ listing:
 
 ---
 
-About this site
+About the labs

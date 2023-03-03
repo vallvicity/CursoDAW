@@ -4,6 +4,8 @@ title: "Lab #2: Movie Manager"
 
 We are going to develop this app according to these requirements:
 
+![Bru & Tara don't know about programming](/images/IMG-20190725-WA0002.jpg)
+
 
 :::{.summary}
 📘 Linux Lab#SE02-1: Movie Review and Rating

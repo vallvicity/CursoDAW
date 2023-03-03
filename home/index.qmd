@@ -4,30 +4,38 @@ execute:
   echo: false
 
 ---
-## Barack Obama!!
-
-```{ojs}
-import {image} from "@mbostock/voronoi-stippling"
-image
-```
-
-```{ojs}
-import {canvas} from "@d3/world-tour"
-canvas
-```
-
-
-
-
-
-
-
 ```{ojs}
 import {chart as streamgraph} from "@d3/streamgraph-transitions"
 
 streamgraph
 
 ```
+
+:::{.callout-note collapse="true"}
+
+## Barack Obama!!
+
+```{ojs}
+import {image} from "@mbostock/voronoi-stippling"
+image
+```
+:::
+
+
+:::{.callout-note collapse="true"}
+### World Tour
+
+```{ojs}
+
+import {canvas} from "@d3/world-tour"
+canvas
+```
+:::
+
+
+
+
+
 
 ```{ojs}
 viewof likeit = Inputs.range([1, 2000], {label: "Like it!!", step: 1})
