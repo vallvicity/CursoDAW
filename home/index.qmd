@@ -6,9 +6,7 @@ execute:
 ---
 ```{ojs}
 import {chart as streamgraph} from "@d3/streamgraph-transitions"
-
 streamgraph
-
 ```
 
 :::{.callout-note collapse="true"}
@@ -26,7 +24,6 @@ image
 ### World Tour
 
 ```{ojs}
-
 import {canvas} from "@d3/world-tour"
 canvas
 ```
@@ -39,7 +36,6 @@ canvas
 
 ```{ojs}
 viewof likeit = Inputs.range([1, 2000], {label: "Like it!!", step: 1})
-
 Plot.plot({
   marks: [
     Plot.ruleY([0]),
@@ -48,22 +44,7 @@ Plot.plot({
 })
 ```
 
-
 ```{ojs}
-import {Versor} from "@d3/world-tour"
-
-import {mutable name} from "@d3/world-tour"
-
-import {height} from "@d3/world-tour"
-import {tilt} from "@d3/world-tour"
-import {sphere} from "@d3/world-tour"
-import {countries} from "@d3/world-tour"
-import {borders} from "@d3/world-tour"
 import {d3, map} from "@d3/orthographic"
-
 map
-
 ```
-
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
