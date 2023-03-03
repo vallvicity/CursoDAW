@@ -2,6 +2,7 @@
   {
     "listing": "/about.html",
     "items": [
+      "/labs/mooc_fi.html",
       "/labs/labse02moviemanager.html",
       "/labs/labs.html",
       "/labs/carsProject.html"
