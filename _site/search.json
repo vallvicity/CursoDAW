@@ -81,7 +81,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About the labs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLab #2: Movie Manager\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLabs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncarsProject\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "About the labs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJava Programming I University of Helsinki\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLab #2: Movie Manager\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLabs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncarsProject\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "home/index.html",
@@ -89,5 +89,12 @@
     "title": "Curso Cifo Daw",
     "section": "",
     "text": "import {chart as streamgraph} from \"@d3/streamgraph-transitions\"\n\nstreamgraph\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBarack Obama!!\n\n\n\n\n\n\nimport {image} from \"@mbostock/voronoi-stippling\"\nimage\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWorld Tour\n\n\n\n\n\n\nimport {canvas} from \"@d3/world-tour\"\ncanvas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nviewof likeit = Inputs.range([1, 2000], {label: \"Like it!!\", step: 1})\n\nPlot.plot({\n  marks: [\n    Plot.ruleY([0]),\n    Plot.lineY(aapl, Plot.windowY({x: \"Date\", y: \"Close\", k: likeit, reduce: \"mean\"}))\n  ]\n})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nimport {Versor} from \"@d3/world-tour\"\n\nimport {mutable name} from \"@d3/world-tour\"\n\nimport {height} from \"@d3/world-tour\"\nimport {tilt} from \"@d3/world-tour\"\nimport {sphere} from \"@d3/world-tour\"\nimport {countries} from \"@d3/world-tour\"\nimport {borders} from \"@d3/world-tour\"\nimport {d3, map} from \"@d3/orthographic\"\n\nmap\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "labs/mooc_fi.html",
+    "href": "labs/mooc_fi.html",
+    "title": "Java Programming I University of Helsinki",
+    "section": "",
+    "text": "Java programming I certificate"
   }
 ]
