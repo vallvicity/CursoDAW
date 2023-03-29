@@ -29,6 +29,7 @@ website:
         - labs/labs.qmd
         - labs/labse02moviemanager.qmd
         - labs/carsProject.qmd
+        - labs/recipemanager.qmd
 
     - id: albertusdylemma
       title: "adM"

@@ -82,5 +82,8 @@
   },
   "labs/mooc_fi.qmd": {
     "mooc_fi.html": "74b6b0b9"
+  },
+  "labs/recipemanager.qmd": {
+    "recipemanager.html": "1aba56f0"
   }
 }

@@ -88,7 +88,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About the labs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJava Programming I University of Helsinki\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLab #2: Movie Manager\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLabs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncarsProject\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "About the labs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJava Programming I University of Helsinki\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLab #2: Movie Manager\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLabs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\nRecipe Manager\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncarsProject\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "home/index.html",
@@ -96,5 +96,19 @@
     "title": "Curso Cifo Daw",
     "section": "",
     "text": "import {chart as streamgraph} from \"@d3/streamgraph-transitions\"\nstreamgraph\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBarack Obama!!\n\n\n\n\n\n\nimport {image} from \"@mbostock/voronoi-stippling\"\nimage\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWorld Tour\n\n\n\n\n\n\nimport {canvas} from \"@d3/world-tour\"\ncanvas\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nviewof likeit = Inputs.range([1, 2000], {label: \"Like it!!\", step: 1})\nPlot.plot({\n  marks: [\n    Plot.ruleY([0]),\n    Plot.lineY(aapl, Plot.windowY({x: \"Date\", y: \"Close\", k: likeit, reduce: \"mean\"}))\n  ]\n})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nimport {d3, map} from \"@d3/orthographic\"\nmap"
+  },
+  {
+    "objectID": "labs/recipemanager.html",
+    "href": "labs/recipemanager.html",
+    "title": "Recipe Manager",
+    "section": "",
+    "text": "I want to make a simple program that stores cooking recipes, create new ones, and in the future could be able to display a weekly menu, or even prepare a shoping list according to that menu.\nI’ve been able only to draw a first classDiagram that I hope to perform in the next weeks:\n\n\n\n\nclassDiagram\nIngredient o-- Recipe\nclass Recipe{\n    -name: String\n    -time: Duration\n    -ingredients: Ingredient\n    -instruccions: String\n    -rating: int\n}\n\nclass Ingredient{\n    -name: String\n}"
+  },
+  {
+    "objectID": "adm/AlbertusDylemma.html#rule-nº-1-avoid-the-pitt",
+    "href": "adm/AlbertusDylemma.html#rule-nº-1-avoid-the-pitt",
+    "title": "Albertus’ Dylemma",
+    "section": "Rule nº 1: Avoid the Pitt",
+    "text": "Rule nº 1: Avoid the Pitt\nIt’s all about preventing burnouts. You must see what’s your level of energy at every time. I’m starting a kind of journal that reflects it and I’m doing tasks according to that level. Here’s the cheatsheet we made at class:\n\n\n\nEnergy levels and their respective appropiate tasks.\n\n\nSee? Since today I’m kind of Low Energy, I decided after a bit of reading (I’m reading ‘Atomic Habits’ at this moment, by the way), to start writing a bit in here.\nBut it’s important to do somenthing instead. The fact that you don’t have the energy to do complex tasks doesn’t mean that you should do nothing at all. In this way you are still productive and don’t have the guilt of doing fuck all. Try to change what you’re doing for somenthing less demanding. Do not hesitate to ask someone about the problem you’re at.\nGive yourself a break or whatever. Keep in mind that your mental energy is your most precious asset, don’t waste it.\n\n\n\n\n\n\nNote\n\n\n\nSummarizing: If you’re gonna face a difficult problem, make sure you have the mental energy for it."
   }
 ]

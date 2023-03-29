@@ -72,3 +72,19 @@ G --> A
 
 ```
 
+## Rule nº 1: Avoid the Pitt
+
+It's all about preventing burnouts. You must see what's your level of energy at every time. I'm starting a kind of journal that reflects it and I'm doing tasks according to that level. Here's the cheatsheet we made at class:
+
+![Energy levels and their respective appropiate tasks.](/images/energy.jpg)
+
+See? Since today I'm kind of Low Energy, I decided after a bit of reading (I'm reading 'Atomic Habits' at this moment, by the way), to start writing a bit in here.  
+But it's important to do somenthing instead. The fact that you don't have the energy to do complex tasks doesn't mean that you should do nothing at all. In this way you are still productive and don't have the guilt of doing fuck all. Try to change what you're doing for somenthing less demanding. Do not hesitate to ask someone about the problem you're at.  
+
+Give yourself a break or whatever. Keep in mind that your mental energy is your most precious asset, don't waste it.
+
+:::{.callout-note}
+**Summarizing:** If you're gonna face a difficult problem, make sure you have the mental energy for it.
+:::
+
+

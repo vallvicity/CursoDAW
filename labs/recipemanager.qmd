@@ -1,0 +1,26 @@
+---
+title: Recipe Manager
+---
+
+I want to make a simple program that stores cooking recipes, create new ones, and in the future could be able to display a weekly menu, or even prepare a shoping list according to that menu.
+
+I've been able only to draw a first classDiagram that I hope to perform in the next weeks:
+```{mermaid}
+classDiagram
+Ingredient o-- Recipe
+class Recipe{
+    -name: String
+    -time: Duration
+    -ingredients: Ingredient
+    -instruccions: String
+    -rating: int
+}
+
+class Ingredient{
+    -name: String
+}
+
+
+
+
+```
